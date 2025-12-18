@@ -37,7 +37,7 @@ body {
     mix-blend-mode: overlay;
     opacity: 0.3;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     background-size: cover;
     align-items: start;
     background-position: center;
@@ -54,7 +54,7 @@ body {
     margin-bottom: 1vh;
     gap: 5vw;
     display: flex;
-    justify-content: center; 
+    justify-content: left; 
     align-items: center;
     z-index: 3; 
 }
@@ -66,11 +66,8 @@ body {
         align-items: center;
         margin-top: .5%;
         margin-bottom: .5%;
-        margin-right: 2em;
-        gap: 5vw;
-        width: 100%;
-        height: 50%;
-        margin-left: auto;
+        gap: 5%;
+        width: 50vw;
 }
 
 
@@ -97,9 +94,8 @@ body {
     white-space: nowrap;
     transition-delay: 0.1s;
     border-radius: 50px;
-    font-size: 1.2vw;
-    padding-left: 3em;
-    padding-right: 3em;
+    font-size: .1em;
+    padding-inline: 5%;
 
     background-color: #2f2e2a62;
     backdrop-filter: blur(5px);
@@ -119,11 +115,8 @@ body {
     color: rgb(0, 0, 0);
     border-top: .11em solid #dddddd;
     border-left: .11em solid #dddddd;
-    padding-left: 3.5em;
-    padding-right: 3.5em;
+    padding-inline: 4vw;
 }
-
-
 
 .landing-page-content {
     position: relative;
@@ -140,9 +133,12 @@ body {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
-    padding: .5%;
-    width: 30%;
+    margin-top: 10vh;
+    padding: .1%;
+    min-width: 30vh;
+    max-height: 50vh;
+    max-width: 50vh;
+    
     border-radius: 50%;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.349);
     background-color: beige;
@@ -150,14 +146,15 @@ body {
 
 h1 {
     text-align: center;
-    margin-top: 4vh;
-    font-size: 4.5vw;
+    margin-top: 5vh;
+    font-size: 5vw;
+    width: 80em;
     color: beige;
 }
 p {
     text-align: center;
-    margin-top: 1.5vh;
-    font-size: 2vw;
+    margin-top: 1vw;
+    font-size: 2.6vw;
     color: beige;
 }
 
@@ -185,7 +182,7 @@ p {
     height: 80vh;
     width: 90%;
     margin-top: 10vh;
-    margin-bottom: 5vh;
+    margin-bottom: 8vh;
     margin-left: 5%;
     margin-right: 5%;
     align-items: center;
@@ -196,13 +193,13 @@ p {
 .bento-aboutme{
     display: grid;
     grid-template-columns: 22% 22% 22% 22%;
-    grid-auto-rows: fit-content;
+    grid-auto-rows: 50% 30%;
     position: relative;
-    height: 60vh;
+    height: 50vh;
     gap: 3em;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20vh;
+    margin-bottom: 15vh;
     margin-left: 5%;
     margin-right: 5%;
     grid-template-areas: 
