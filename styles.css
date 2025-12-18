@@ -48,32 +48,33 @@ body {
     position: fixed;
     top: 0;
     display: flex;
-    height: 10vh;
-    width: 100%;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    height: fit-content;
+    width: 100vw;
     gap: 5vw;
-    display: flex;
-    justify-content: left; 
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex; 
     align-items: center;
-    z-index: 3; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 3;
 }
 
 .nav-container {
         display: flex;
         flex-direction: row;
-        justify-content: left;
+        justify-content: right;
         align-items: center;
         margin-top: .5%;
         margin-bottom: .5%;
-        gap: 5%;
-        width: 50vw;
+        gap: 4vw;
+        width: 74vw;
+        margin-right: 3vw;
 }
 
 
 .logo {
-    display: flex;
-    width: 9vw;
+    width: 12vw;
     justify-content: left;
     align-items: center;
     margin-left: 3vw;
@@ -83,8 +84,6 @@ body {
     display: flex;
     width: fit-content;
     list-style: none;
-    height: 4vw;
-    border-radius: 10px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -94,8 +93,10 @@ body {
     white-space: nowrap;
     transition-delay: 0.1s;
     border-radius: 50px;
-    font-size: .1em;
-    padding-inline: 5%;
+    font-size: calc(.8em + .6vw);
+    padding-inline: 3vw;
+    padding-top: 1em;
+    padding-bottom: 1em;
 
     background-color: #2f2e2a62;
     backdrop-filter: blur(5px);
@@ -107,15 +108,12 @@ body {
 
 .nav-link:hover, .nav-link.nav-link.active-scroll {
     background-color: #65ffde9d;
-    opacity: 1;
-    height: 4vw;
     cursor: pointer;
     width: fit-content;
-    border-radius: 50px;
     color: rgb(0, 0, 0);
     border-top: .11em solid #dddddd;
     border-left: .11em solid #dddddd;
-    padding-inline: 4vw;
+    padding-inline: 3.5vw;
 }
 
 .landing-page-content {
@@ -126,6 +124,7 @@ body {
     align-content: center;
     justify-content: center;
     height: 80vh;
+    width: fit-content;
     text-align: center;
 }
 
@@ -147,14 +146,13 @@ body {
 h1 {
     text-align: center;
     margin-top: 5vh;
-    font-size: 5vw;
-    width: 80em;
+    font-size: 6.5vmin;
     color: beige;
 }
 p {
     text-align: center;
     margin-top: 1vw;
-    font-size: 2.6vw;
+    font-size: 3.3vmin;
     color: beige;
 }
 
@@ -166,8 +164,12 @@ p {
     position: relative;
     align-content: center;
     justify-content: flex-start;
-    height: 180vh;
+    height: 220vh;
     width: 100%;
+    gap: 30vh;
+    padding-bottom: 20vh;
+    padding-top: 15vh;
+    justify-content: space-between;
     overflow: hidden;
     margin-top: 0;
     border-left: transparent;
@@ -177,17 +179,45 @@ p {
 
 .about-me-container{
     display: flex;
-    flex-direction: row;
-    gap: 5vw;
+    flex-direction: column;
+    gap: 3vw;
     height: 80vh;
     width: 90%;
-    margin-top: 10vh;
     margin-bottom: 8vh;
     margin-left: 5%;
     margin-right: 5%;
-    align-items: center;
-    align-content: center;
     justify-content: center;
+}
+
+.box1{
+    font-size: 15vmin;
+    align-self: center;
+    white-space: nowrap;
+    color: beige;
+}
+
+.box12{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box2{
+    font-size: 2.1vw;
+    align-self: self-start;
+    color: beige;
+    width: 60vw;
+}
+
+.box3{
+    position: relative;
+    height: 25vw;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: right;
+    padding: 1%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.453);
+    background-color: beige;
 }
 
 .bento-aboutme{
@@ -284,32 +314,6 @@ p {
     font-size: 2.5vw;
     white-space: nowrap;
     color: beige;
-}
-
-.box1{
-    font-size: 8vw;
-    margin-bottom: 3vh;
-    align-self: self-end;
-    white-space: nowrap;
-    color: beige;
-}
-
-.box2{
-    font-size: 1.5vw;
-    align-self: self-start;
-    color: beige;
-    width: 50vw;
-}
-
-.box3{
-    position: relative;
-    height: 31vw;
-    border-radius: 50%;
-    align-self: center;
-    justify-self: right;
-    padding: 1%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.453);
-    background-color: beige;
 }
 
 .portfolio-page{
